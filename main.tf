@@ -4,7 +4,7 @@ module "multipass_kube_lab" {
 
 
 module "kube_addons" {
-  source = "git@github.com:argally/terrraform-modules-kube.git//kube-argocd-bootstrap"
+  source = "git@github.com:argally/terrraform-modules-kube.git"
 
   enable_kube_addons          = true
   argocd_admin_password       = var.argocd_admin_password
